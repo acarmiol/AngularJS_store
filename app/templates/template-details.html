@@ -7,7 +7,7 @@
 		<div class="row">
 			<div ng-repeat="image in template.images | limitTo:4">
 				<div class="col-md-3">
-					<img class="img-full" ng-src="img/{{image.name}}">
+					<img class="img-full" ng-src="img/{{image.name}}" ng-click="setImage(image)">
 				</div>
 			</div>
 		</div>
